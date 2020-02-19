@@ -4,6 +4,6 @@
 <configuration>
 	<!-- 别名定义 -->
 	<typeAliases>
-		<package name="com.web.pojo" />
+		<package name="com.codeitup_team5.pojo" />
 	</typeAliases>
 </configuration>

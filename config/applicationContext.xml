@@ -61,7 +61,7 @@
 	<!-- 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			 pointcut="execution(* com.web.service.*.*(..))" />
+			 pointcut="execution(* com.codeitup_team5.service.*.*(..))" />
 	</aop:config>
 	<!-- 配置 MyBatis的工厂 -->
 	<bean class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -73,8 +73,8 @@
 	</bean>
 	<!-- 接口开发,扫描 com.itheima.core.dao包 ，写在此包下的接口即可被扫描到 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.web.dao" />
+		<property name="basePackage" value="com.codeitup_team5.dao" />
 	</bean>
 	<!-- 配置扫描@Service注解 -->
-	<context:component-scan base-package="com.web.service"/>	
+	<context:component-scan base-package="com.codeitup_team5.services"/>	
 </beans>
